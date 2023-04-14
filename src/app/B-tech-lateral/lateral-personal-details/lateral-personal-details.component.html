@@ -1,0 +1,35 @@
+<form #LateralPersonaDetails="ngForm" (ngSubmit)="saveLateralPersonal(LateralPersonaDetails.value)"><div class="container">
+    <div class="row">
+    <div class="col-lg12">
+    <div class="col-lg-4">
+    <label>Emp Name</label>
+    <input type="text" class="form-control" name="EmpName" [(ngModel)]="EmployeesInfo.EmpName">
+    </div>
+    <div class="col-lg-4">
+    <label>Password</label>
+    <input type="text" class="form-control" name="Password" [(ngModel)]="EmployeesInfo.Password">
+    </div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-2" style="float: right;margin-right:20px;width:160px;"> Save</button> 
+    </div> 
+    </div>
+    </form>
+    <table class="table table-bordered table-striped mb-0" style="width:100%">
+    <thead>
+    <tr>
+    <th>SrNo <i class="fa fa-sort"></i></th>
+    <th>Name<i class="fa fa-sort"></i></th>
+    <th>pasword<i class="fa fa-sort"></i></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let item of items">
+    <td>{{item.Id}}</td>
+    <td>{{item.EmpName}}</td> 
+    <td>{{item.Password}}</td>
+    </tr>
+    </tbody>
+    </table>
+
+    
+

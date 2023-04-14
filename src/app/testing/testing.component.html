@@ -1,0 +1,212 @@
+<button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-blue" style="float: right;">+</button>
+<form style="float:right;">
+<div id="id01" class="w3-modal">
+<div class="w3-modal-content" style="float: right;width:70vw;height:30vw;margin-top: -80px; margin-right: 15px;">
+<header class="w3-container w3-teal"> 
+<span onclick="document.getElementById('id01').style.display='none'" class="w3-button w3-display-topright">Closed</span>
+<h2>Add Students Data</h2>
+</header>
+<div class="form-group">
+<div class="container">
+<div class="row">
+
+ <div class="form-group row">
+ <div class="col-sm-4">
+ <label class="labelfont">Profile Image</label><br />
+ <input type="file" name="img" ngModel>
+ </div>
+
+ <div class="col-lg-4 p-field">
+
+<label class="labelfont">Id<span class="text-danger">*</span></label>
+<input pInputText class="form-control shadow-none" type="text" autocomplete="off" name="id" placeholder="id" ngModel>
+</div>
+
+<div class="col-lg-4 p-field">
+
+
+<label class="labelfont">StudentName<span class="text-danger">*</span></label>
+<input pInputText class="form-control shadow-none" name="StudentName" placeholder="StudentName" type="text" autocomplete="off">
+</div>
+</div>
+
+<div class="col-sm-4">
+<label>Address</label>
+<input type="text" pInputText name="Address" placeholder="Address" class="form-control shadow-none" ngModel>
+</div>
+
+
+<div class="col-sm-4">
+<label>Pincode</label>
+<input type="text" name="Pincode"  placeholder="Pincode" class="form-control shadow-none" ngModel>
+</div>
+
+<div class="col-sm-4">
+<label>Mobile</label>
+<input type="text" name="Mobile"  placeholder="Mobile" class="form-control shadow-none" ngModel>
+</div>
+
+<div class="col-sm-4"> 
+<label>CurrentAddress</label>
+<input type="text" name="CurrentAddress" placeholder="CurrentAddress" class="form-control shadow-none" ngModel>
+</div>
+<!-- 
+<div class="col-sm-4"> 
+<label>CurrentAddress</label>
+<p-dropdown></p-dropdown>
+</div> -->
+
+</div>
+</div>
+
+<br>
+<br>
+
+<button type="submit" class="btn btn-secondary" style="float: right;margin-right:20px;width:160px;">save</button>
+
+
+</div>
+</div>
+</div>
+</form>
+
+
+
+
+
+<!-- <nav>
+    <aside>
+      <ul><li><h2><img src="" alt=""><span>Coding Nile</span></h2></li></ul>
+      <ul><li id="home">
+        <a href="#home">
+           <i class="fa fa-home"></i>
+           <span>Home</span><i class="fa fa-angle-right">       
+           </i>
+       </a>
+        <ul>
+          <li><p>Normal Home</p></li>
+          <li><p>Normal Home</p></li>
+          <li><p>Normal Home</p></li>
+        </ul>
+  
+      </li>
+      </ul>
+      <ul>
+        <li id="ecom">
+          <a href="#ecom">
+             <i class="fa fa-shopping-cart"></i>
+             <span>E-Commerce</span><i class="fa fa-angle-right">       
+             </i>
+         </a>
+          <ul>
+            <li><p>Product</p></li>
+            <li><p>Order</p></li>
+            <li><p>Creadits Card</p></li>
+          </ul>
+    
+        </li>
+        <li id="comp">
+          <a href="#comp">
+             <i class="fa fa-diamond"></i>
+             <span>Component</span><i class="fa fa-angle-right">       
+             </i>
+         </a>
+          <ul>
+            <li><p>General</p></li>
+            <li><p>Panels</p></li>
+            <li><p>Tables</p></li>
+            <li><p>Icons</p></li>
+            <li><p>Forms</p></li>
+          </ul>
+    
+        </li>
+  
+        <li id="chart">
+          <a href="#chart">
+             <i class="fa fa-line-chart"></i>
+             <span>Chart</span><i class="fa fa-angle-right">       
+             </i>
+         </a>
+          <ul>
+            <li><p>Pie Chart</p></li>
+            <li><p>Line Chart</p></li>
+            <li><p>Bar Chart</p></li>
+            <li><p>Histogram Chart</p></li>
+          </ul>
+    
+        </li>
+  
+        <li id="user">
+          <a href="#user">
+             <i class="fa fa-users"></i>
+             <span>Customers</span><i class="fa fa-angle-right">       
+             </i>
+         </a>
+          <ul>
+            <li><a href="#" routerLink="add"><p>Stable Customer</p></a></li>
+            <li><p>New Customer</p></li>
+            <li><p>old Customer</p></li>
+            <li><p>Deactive Customer</p></li>
+            <li><p>Re-active Customer</p></li>
+          </ul>
+    
+        </li>
+  
+        <li id="task">
+          <a href="#task">
+             <i class="fa fa-tasks"></i>
+             <span>Task</span><i class="fa fa-angle-right">       
+             </i>
+         </a>
+          <ul>
+            <li><p>html navbar</p></li>
+            <li><p>Css navbar</p></li>
+            <li><p>Css animation</p></li>
+            <li><p>css card</p></li>
+            <li><p>responsive navbars</p></li>
+          </ul>
+    
+        </li>
+  
+  
+        <li id="even">
+          <a href="#even">
+             <i class="fa fa-calendar-check-o"></i>
+             <span>Events</span><i class="fa fa-angle-right">       
+             </i>
+         </a>
+          <ul>
+            <li><p>meeting</p></li>
+            <li><p>marketing</p></li>
+            <li><p>overview</p></li>
+            <li><p>video confrences</p></li>
+          </ul>
+    
+        </li>
+  
+  
+  
+      </ul>
+    </aside>
+     <header>
+      <div class="banner py-5">
+        <h6></h6>
+        <div class="details">
+         
+        </div>
+        
+        <router-outlet> </router-outlet>
+      </div>
+    </header> 
+  </nav> -->
+  
+      
+   
+  <!-- 
+  <div class="main col-10 h-20 py-5 row">
+   
+      
+  
+  </div> -->
+  
+  
